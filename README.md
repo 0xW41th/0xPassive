@@ -107,8 +107,6 @@ python oxpassive.py -d example.com
 
 Supports:
 - Terminal colored output
-- Text file output
-- JSON output
 - Automation friendly pipelines
 
 Example:
@@ -124,6 +122,7 @@ python oxpassive.py -d example.com
 0xPassive/
 ├── assets/
 │   └── logo.png
+│   └── screenshot.png
 ├── modules/
 │   ├── asn_lookup.py
 │   ├── dns_enum.py
