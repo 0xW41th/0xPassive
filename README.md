@@ -41,6 +41,10 @@ Designed for **bug bounty hunters, red teamers, and security researchers** who w
 
 ## ✨ Features
 
+<p align="center">
+  <img src="assets/screenshot.png" alt="OxPassive example output" width="700">
+</p>
+
 - 🔍 Passive subdomain discovery
 - 🌐 DNS enumeration (A, AAAA, MX, NS, TXT)
 - 🏢 ASN & hosting intelligence
@@ -54,10 +58,6 @@ Designed for **bug bounty hunters, red teamers, and security researchers** who w
 ---
 
 ## 📸 Example Output
-
-<p align="center">
-  <img src="assets/screenshot.png" alt="OxPassive example output" width="700">
-</p>
 
 ```bash
 python oxpassive.py -d example.com
