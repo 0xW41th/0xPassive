@@ -20,6 +20,7 @@
   <a href="#installation">Installation</a> •
   <a href="#usage">Usage</a> •
   <a href="#output">Output</a> •
+  <a href="#project-structure">Structure</a> •
   <a href="#roadmap">Roadmap</a> •
   <a href="#disclaimer">Disclaimer</a>
 </p>
@@ -28,13 +29,13 @@
 
 ## 🚀 What is OxPassive?
 
-**OxPassive** is a **passive reconnaissance framework** designed to extract deep domain intelligence **without touching the target**.
+**OxPassive** is a **passive reconnaissance framework** built to extract deep domain intelligence **without touching the target**.
 
 No scans.  
 No noise.  
 No alerts.
 
-Built for **bug bounty hunters, red teamers, and security researchers** who want stealthy recon before active testing.
+Designed for **bug bounty hunters, red teamers, and security researchers** who want clean recon before active testing.
 
 ---
 
@@ -56,3 +57,115 @@ Built for **bug bounty hunters, red teamers, and security researchers** who want
 
 ```bash
 python oxpassive.py -d example.com
+```
+
+```
+[INF] OxPassive v1.1
+[INF] Target: example.com
+
+[SUB] Discovering subdomains...
+[DNS] Fetching DNS records...
+[ASN] Resolving ASN & hosting...
+[TEC] Fingerprinting technologies...
+
+✔ api.example.com
+✔ dev.example.com
+✔ mail.example.com
+✔ staging.example.com
+
+[DNS] A     93.184.216.34
+[DNS] MX    mail.example.com
+[ASN] AS15133 (Cloudflare)
+[TEC] nginx, Cloudflare
+```
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/0xW41th/0xPassive.git
+cd 0xPassive
+pip install -r requirements.txt
+```
+
+---
+
+## ⚙️ Usage
+
+```bash
+python oxpassive.py -d example.com
+```
+
+### Options
+
+```text
+-d, --domain      Target domain
+-o, --output      Save output to file
+--json            JSON output
+--silent          Minimal output
+```
+
+---
+
+## 📤 Output
+
+Supports:
+- Terminal colored output
+- Text file output
+- JSON output
+- Automation friendly pipelines
+
+Example:
+```bash
+python oxpassive.py -d example.com
+```
+
+---
+
+## 🗂 Project Structure
+
+```
+0xPassive/
+├── assets/
+│   └── logo.png
+├── modules/
+│   ├── asn_lookup.py
+│   ├── dns_enum.py
+│   ├── headers.py
+│   ├── output.py
+│   ├── scope_hints.py
+│   ├── subdomain_resolver.py
+│   ├── subdomain_sources.py
+│   ├── tech_fingerprint.py
+│   └── whois_lookup.py
+├── oxpassive.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🛣 Roadmap
+
+- [ ] Add more passive data sources
+- [ ] Shodan / Censys integration
+- [ ] SQLite output
+- [ ] Nuclei auto template generation
+- [ ] Config file support
+- [ ] Web dashboard
+- [ ] GitHub releases
+
+---
+
+## ⚠️ Disclaimer
+
+This tool is for **educational and authorized security testing only**.  
+You are responsible for how you use it.
+
+---
+
+## ❤️ Author
+
+Built with ⚡ by **0xW41th**  
+If you like it, give a ⭐ and share with the community.
