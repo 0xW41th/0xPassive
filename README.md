@@ -56,7 +56,7 @@ Designed for **bug bounty hunters, red teamers, and security researchers** who w
 ## 📸 Example Output
 
 <p align="center">
-  <img src="assets/screenshot.png" alt="OxPassive example output" width="900">
+  <img src="assets/screenshot.png" alt="OxPassive example output" width="700">
 </p>
 
 ```bash
