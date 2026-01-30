@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="assets/logo.png" width="180">
+  <img src="assets/logo.png" width="250">
   <br>
   OxPassive
 </h1>
