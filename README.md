@@ -130,7 +130,7 @@ python oxpassive.py -d example.com
 │   ├── subdomain_sources.py
 │   ├── tech_fingerprint.py
 │   └── whois_lookup.py
-├── oxpassive.py
+├── 0xpassive.py
 ├── requirements.txt
 └── README.md
 ```
