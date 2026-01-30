@@ -42,7 +42,7 @@ Designed for **bug bounty hunters, red teamers, and security researchers** who w
 ## ✨ Features
 
 <p align="center">
-  <img src="assets/screenshot.png" alt="OxPassive example output" width="700">
+  <img src="assets/screenshot.png" alt="OxPassive example output" width="800">
 </p>
 
 - 🔍 Passive subdomain discovery
