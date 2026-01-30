@@ -98,7 +98,7 @@ pip install -r requirements.txt
 ## ⚙️ Usage
 
 ```bash
-python oxpassive.py -d example.com
+python 0xpassive.py -d example.com
 ```
 
 ---
