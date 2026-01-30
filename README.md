@@ -97,15 +97,6 @@ pip install -r requirements.txt
 python oxpassive.py -d example.com
 ```
 
-### Options
-
-```text
--d, --domain      Target domain
--o, --output      Save output to file
---json            JSON output
---silent          Minimal output
-```
-
 ---
 
 ## 📤 Output
